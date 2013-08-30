@@ -6,7 +6,6 @@ import jason.asSyntax.Structure;
 
 import java.rmi.RemoteException;
 
-import robocode.rescue.RobotAction;
 import robocode.rescue.RobotInfo;
 import robocode.rescue.interfaces.RMIRobotInterface;
 
@@ -63,7 +62,7 @@ public class TimeBTeamEnv extends RoborescueEnv {
                 if (robos[robo].getHeading() > 180.0) {
                     teamRef[robo].turnLeft(180.0);
                 } else {
-                    teamRef[robo].setAhead(40.0);
+                    teamRef[robo].setAhead(0.0);
                 }
             }
             
